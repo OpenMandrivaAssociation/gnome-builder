@@ -17,7 +17,7 @@
 
 Name:		gnome-builder
 Version:	3.30.1
-Release:	%mkrel 2
+Release:	1
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
