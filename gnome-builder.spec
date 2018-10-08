@@ -25,7 +25,7 @@ URL:		https://wiki.gnome.org/Apps/Builder
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	bison
 BuildRequires:	intltool
-BuildRequires:	appdata-tools
+BuildRequires:	appstream-util
 BuildRequires:	clang-devel
 BuildRequires:	docbook-style-xsl
 BuildRequires:	flex
@@ -55,7 +55,7 @@ BuildRequires:	pkgconfig(systemd)
 BuildRequires:  pkgconfig(template-glib-1.0)
 BuildRequires:	pkgconfig(vapigen)
 BuildRequires:	pkgconfig(vte-2.91)
-BuildRequires:	python3-gobject3
+BuildRequires:	python-gobject3
 BuildRequires:	vala-tools
 BuildRequires:	xsltproc
 BuildConflicts: valgrind-devel <= 3.13.0-10.mga7
