@@ -62,7 +62,8 @@ BuildConflicts: valgrind-devel <= 3.13.0-10.mga7
 
 Requires:	gtksourceview >= 4
 Requires:	gsettings-desktop-schemas
-Requires:	pythonegg(3)(jedi)
+# Not imported yet for Cooker (penguin)
+#Requires:	pythonegg(3)(jedi)
 
 Recommends:	flatpak-builder
 Recommends:     clang
@@ -108,7 +109,7 @@ developing applications that use %{name}.
 %{_datadir}/gnome-builder
 %{_datadir}/metainfo/org.gnome.Builder.appdata.xml
 %{python3_sitearch}/gi/overrides/Ide.py
-%{python3_sitearch}/gi/overrides/__pycache__/*
+#{python3_sitearch}/gi/overrides/__pycache__/*
 
 %files devel
 %{_includedir}/gnome-builder/
