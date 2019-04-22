@@ -57,6 +57,7 @@ BuildRequires:	pkgconfig(vapigen)
 BuildRequires:	pkgconfig(vte-2.91)
 BuildRequires:	python-gobject3
 BuildRequires:	vala-tools
+BuildRequires:  vala
 BuildRequires:	xsltproc
 BuildRequires:  pkgconfig(gladeui-2.0)
 BuildConflicts: valgrind-devel <= 3.13.0-10.mga7
