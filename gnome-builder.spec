@@ -89,6 +89,8 @@ developing applications that use %{name}.
 %autosetup -p1
 
 %build
+export CC=gcc
+export CXX=g++
 %meson -Denable_gtk_doc=true
 %meson_build
 
