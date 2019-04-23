@@ -110,6 +110,8 @@ export CXX=g++
 %{_iconsdir}/*/*/*/*
 %{_datadir}/dbus-1/services/org.gnome.Builder.service
 %{_datadir}/gtksourceview-4/*
+%{_datadir}/gtksourceview-3.0/styles/builder-dark.style-scheme.xml
+%{_datadir}/gtksourceview-3.0/styles/builder.style-scheme.xml
 %{_datadir}/gnome-builder
 %{_datadir}/metainfo/org.gnome.Builder.appdata.xml
 %{python3_sitearch}/gi/overrides/Ide.py
@@ -120,4 +122,5 @@ export CXX=g++
 %{_libdir}/%{name}/pkgconfig/
 %{_datadir}/%{name}/gir-1.0/
 %{_datadir}/%{name}/vapi/
+%{_includedir}/gnome-builder*/
 
