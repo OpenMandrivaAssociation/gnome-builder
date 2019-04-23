@@ -16,7 +16,7 @@
 %global jsonrpc_glib_version 3.26.1
 
 Name:		gnome-builder
-Version:	3.30.1
+Version:	3.32.1
 Release:	1
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
@@ -57,7 +57,9 @@ BuildRequires:	pkgconfig(vapigen)
 BuildRequires:	pkgconfig(vte-2.91)
 BuildRequires:	python-gobject3
 BuildRequires:	vala-tools
+BuildRequires:  vala
 BuildRequires:	xsltproc
+BuildRequires:  pkgconfig(gladeui-2.0)
 BuildConflicts: valgrind-devel <= 3.13.0-10.mga7
 
 Requires:	gtksourceview >= 4
@@ -88,6 +90,8 @@ developing applications that use %{name}.
 %autosetup -p1
 
 %build
+export CC=gcc
+export CXX=g++
 %meson -Denable_gtk_doc=true
 %meson_build
 
@@ -106,6 +110,8 @@ developing applications that use %{name}.
 %{_iconsdir}/*/*/*/*
 %{_datadir}/dbus-1/services/org.gnome.Builder.service
 %{_datadir}/gtksourceview-4/*
+%{_datadir}/gtksourceview-3.0/styles/builder-dark.style-scheme.xml
+%{_datadir}/gtksourceview-3.0/styles/builder.style-scheme.xml
 %{_datadir}/gnome-builder
 %{_datadir}/metainfo/org.gnome.Builder.appdata.xml
 %{python3_sitearch}/gi/overrides/Ide.py
@@ -116,4 +122,5 @@ developing applications that use %{name}.
 %{_libdir}/%{name}/pkgconfig/
 %{_datadir}/%{name}/gir-1.0/
 %{_datadir}/%{name}/vapi/
+%{_includedir}/gnome-builder*/
 
