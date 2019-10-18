@@ -50,7 +50,7 @@ BuildRequires:  pkgconfig(libpeas-1.0) >= %{libpeas_version}
 BuildRequires:	pkgconfig(mm-common-util)
 BuildRequires:	pkgconfig(pygobject-3.0) >= 3.0.0
 BuildRequires:	pkgconfig(python3)
-BuildRequires:	pkgconfig(sysprof-ui-2) >= 3.29.3
+BuildRequires:	pkgconfig(sysprof-ui-3) >= 3.29.3
 BuildRequires:	pkgconfig(systemd)
 BuildRequires:  pkgconfig(template-glib-1.0)
 BuildRequires:	pkgconfig(vapigen)
