@@ -16,13 +16,14 @@
 %global jsonrpc_glib_version 3.26.1
 
 Name:		gnome-builder
-Version:	3.32.4
+Version:	3.34.1
 Release:	1
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 URL:		https://wiki.gnome.org/Apps/Builder
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Patch0:		work-around-wshadow-error.patch
 BuildRequires:	bison
 BuildRequires:	intltool
 BuildRequires:	appstream-util
@@ -47,6 +48,7 @@ BuildRequires:  pkgconfig(libdazzle-1.0)
 BuildRequires:	pkgconfig(libdevhelp-3.0)
 BuildRequires:	pkgconfig(libgit2-glib-1.0)
 BuildRequires:  pkgconfig(libpeas-1.0) >= %{libpeas_version}
+BuildRequires:  pkgconfig(libpcre2-8)
 BuildRequires:	pkgconfig(mm-common-util)
 BuildRequires:	pkgconfig(pygobject-3.0) >= 3.0.0
 BuildRequires:	pkgconfig(python3)
@@ -91,8 +93,8 @@ developing applications that use %{name}.
 
 %build
 # penguin - build error with clang, switch to gcc
-export CC=gcc
-export CXX=g++
+#export CC=gcc
+#export CXX=g++
 %meson -Denable_gtk_doc=true
 %meson_build
 
