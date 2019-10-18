@@ -119,9 +119,10 @@ developing applications that use %{name}.
 %{_datadir}/metainfo/org.gnome.Builder.appdata.xml
 %{python3_sitearch}/gi/overrides/Ide.py
 #{python3_sitearch}/gi/overrides/__pycache__/*
+%{_libexecdir}/gnome-builder-git
+%{_libexecdir}/gnome-builder-vala
 
 %files devel
-%{_includedir}/gnome-builder/
 %{_libdir}/%{name}/pkgconfig/
 %{_datadir}/%{name}/gir-1.0/
 %{_datadir}/%{name}/vapi/
