@@ -49,6 +49,7 @@ BuildRequires:	pkgconfig(libdevhelp-3.0)
 BuildRequires:	pkgconfig(libgit2-glib-1.0)
 BuildRequires:  pkgconfig(libpeas-1.0) >= %{libpeas_version}
 BuildRequires:  pkgconfig(libpcre2-8)
+BuildRequires:  pkgconfig(libportal)
 BuildRequires:	pkgconfig(mm-common-util)
 BuildRequires:	pkgconfig(pygobject-3.0) >= 3.0.0
 BuildRequires:	pkgconfig(python3)
