@@ -126,6 +126,6 @@ developing applications that use %{name}.
 %files devel
 %{_libdir}/%{name}/pkgconfig/
 %{_datadir}/%{name}/gir-1.0/
-%{_datadir}/%{name}/vapi/
+#{_datadir}/%{name}/vapi/
 %{_includedir}/gnome-builder*/
 
