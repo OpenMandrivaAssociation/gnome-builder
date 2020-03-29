@@ -16,8 +16,8 @@
 %global jsonrpc_glib_version 3.26.1
 
 Name:		gnome-builder
-Version:	3.34.1
-Release:	2
+Version:	3.36.0
+Release:	1
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -49,6 +49,7 @@ BuildRequires:	pkgconfig(libdevhelp-3.0)
 BuildRequires:	pkgconfig(libgit2-glib-1.0)
 BuildRequires:  pkgconfig(libpeas-1.0) >= %{libpeas_version}
 BuildRequires:  pkgconfig(libpcre2-8)
+BuildRequires:  pkgconfig(libportal)
 BuildRequires:	pkgconfig(mm-common-util)
 BuildRequires:	pkgconfig(pygobject-3.0) >= 3.0.0
 BuildRequires:	pkgconfig(python3)
@@ -120,11 +121,11 @@ developing applications that use %{name}.
 %{python3_sitearch}/gi/overrides/Ide.py
 #{python3_sitearch}/gi/overrides/__pycache__/*
 %{_libexecdir}/gnome-builder-git
-%{_libexecdir}/gnome-builder-vala
+#{_libexecdir}/gnome-builder-vala
 
 %files devel
 %{_libdir}/%{name}/pkgconfig/
 %{_datadir}/%{name}/gir-1.0/
-%{_datadir}/%{name}/vapi/
+#{_datadir}/%{name}/vapi/
 %{_includedir}/gnome-builder*/
 
