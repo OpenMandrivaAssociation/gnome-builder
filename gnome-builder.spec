@@ -121,7 +121,7 @@ developing applications that use %{name}.
 %{python3_sitearch}/gi/overrides/Ide.py
 #{python3_sitearch}/gi/overrides/__pycache__/*
 %{_libexecdir}/gnome-builder-git
-%{_libexecdir}/gnome-builder-vala
+#{_libexecdir}/gnome-builder-vala
 
 %files devel
 %{_libdir}/%{name}/pkgconfig/
