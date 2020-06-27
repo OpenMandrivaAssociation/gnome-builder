@@ -94,7 +94,7 @@ developing applications that use %{name}.
 
 %build
 %global ldflags %{ldflags} -Wl,-z,notext
-%global ldflags %{ldflags} -fuse-ld=gold
+#global ldflags %{ldflags} -fuse-ld=gold
 # penguin - build error with clang, switch to gcc
 #export CC=gcc
 #export CXX=g++
