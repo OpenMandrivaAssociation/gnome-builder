@@ -93,7 +93,8 @@ developing applications that use %{name}.
 %autosetup -p1
 
 %build
-%global ldflags %{ldflags} -Wl,-z,notext
+%global build_ldflags %{build_ldflags} -Wl,-z,notext
+#global ldflags %{ldflags} -Wl,-z,notext
 #global ldflags %{ldflags} -fuse-ld=gold
 # penguin - build error with clang, switch to gcc
 #export CC=gcc
