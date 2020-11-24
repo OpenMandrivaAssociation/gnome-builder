@@ -17,7 +17,7 @@
 
 Name:		gnome-builder
 Version:	3.38.1
-Release:	1
+Release:	2
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -121,7 +121,7 @@ developing applications that use %{name}.
 #{_datadir}/gtksourceview-3.0/styles/builder.style-scheme.xml
 %{_datadir}/gnome-builder
 %{_datadir}/metainfo/org.gnome.Builder.appdata.xml
-%{python3_sitearch}/gi/overrides/Ide.py
+#{python3_sitearch}/gi/overrides/Ide.py
 #{python3_sitearch}/gi/overrides/__pycache__/*
 %{_libexecdir}/gnome-builder-git
 #{_libexecdir}/gnome-builder-vala
