@@ -16,7 +16,7 @@
 %global jsonrpc_glib_version 3.26.1
 
 Name:		gnome-builder
-Version:	3.40.0
+Version:	3.40.1
 Release:	1
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
