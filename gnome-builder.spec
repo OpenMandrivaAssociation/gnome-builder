@@ -125,6 +125,7 @@ developing applications that use %{name}.
 %{python_sitelib}/gi/overrides/Ide.py
 %{_libexecdir}/gnome-builder-git
 #{_libexecdir}/gnome-builder-vala
+%{_libexecdir}/gnome-builder-flatpak
 
 %files devel
 %{_libdir}/%{name}/pkgconfig/
