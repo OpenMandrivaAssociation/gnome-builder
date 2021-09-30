@@ -44,6 +44,7 @@ BuildRequires:	pkgconfig(gtk+-3.0) >= 3.9.6
 BuildRequires:	pkgconfig(gtksourceview-4)
 BuildRequires:	pkgconfig(json-glib-1.0)
 BuildRequires:  pkgconfig(jsonrpc-glib-1.0) >= %{jsonrpc_glib_version}
+BuildRequires:  pkgconfig(libcmark)
 BuildRequires:  pkgconfig(libdazzle-1.0)
 BuildRequires:	pkgconfig(libdevhelp-3.0)
 BuildRequires:	pkgconfig(libgit2-glib-1.0)
