@@ -100,7 +100,7 @@ developing applications that use %{name}.
 # penguin - build error with clang, switch to gcc
 #export CC=gcc
 #export CXX=g++
-%meson -Denable_gtk_doc=true
+%meson -Ddoc=true
 %meson_build
 
 %install
