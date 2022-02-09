@@ -12,30 +12,6 @@ This partly reverts 2aea4bd7d0ced77a7d0778517b4505af5dea2dac
  src/plugins/open-with-external/gbp-owe-workbench-addin.c | 2 +-
  5 files changed, 8 insertions(+), 7 deletions(-)
 
-diff --git a/build-aux/flatpak/org.gnome.Builder.json b/build-aux/flatpak/org.gnome.Builder.json
-index 02ac31ede..a32d29b92 100644
---- a/build-aux/flatpak/org.gnome.Builder.json
-+++ b/build-aux/flatpak/org.gnome.Builder.json
-@@ -601,15 +601,16 @@
-             "name" : "libportal",
-             "config-opts" : [
-                 "--libdir=/app/lib",
--                "--buildtype=debugoptimized"
-+                "--buildtype=debugoptimized",
-+                "-Dbackends=gtk3"
-             ],
-             "buildsystem" : "meson",
-             "builddir" : true,
-             "sources" : [
-                 {
-                     "type" : "archive",
--                    "url" : "https://github.com/flatpak/libportal/releases/download/0.4/libportal-0.4.tar.xz",
--                    "sha256" : "3cd5f50907831cf236b40aa14c5a14ccbbf08828cecb3286efa82ce03cacef28"
-+                    "url" : "https://github.com/flatpak/libportal/releases/download/0.5/libportal-0.5.tar.xz",
-+                    "sha256" : "d8c8cb18a34e5eeb26a39c94044c955995b01de0e139caac5e18c076cf821b3b"
-                 }
-             ]
-         },
 diff --git a/meson.build b/meson.build
 index 01737034b..494e0d752 100644
 --- a/meson.build
