@@ -116,7 +116,9 @@ developing applications that use %{name}.
 %{_libdir}/%{name}/
 %{_libexecdir}/gnome-builder-clang
 %{_datadir}/applications/org.gnome.Builder.desktop
+%{_datadir}/gnome-builder/fonts/
 %{_datadir}/glib-2.0/schemas/*.xml
+%{_datadir}/gnome-builder/icons/hicolor/
 %{_iconsdir}/*/*/*/*
 %{_datadir}/dbus-1/services/org.gnome.Builder.service
 %{_datadir}/gtksourceview-4/*
