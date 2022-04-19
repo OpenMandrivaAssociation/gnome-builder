@@ -16,16 +16,15 @@
 %global jsonrpc_glib_version 3.26.1
 
 Name:		gnome-builder
-Version:	41.3
-Release:	3
+Version:	42.0
+Release:	1
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 URL:		https://wiki.gnome.org/Apps/Builder
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 Patch0:		work-around-wshadow-error.patch
-# Upstream patch to fix build witch new libportal 0.5
-Patch1:   https://gitlab.gnome.org/GNOME/gnome-builder/-/merge_requests/486.patch
+
 BuildRequires:	bison
 BuildRequires:	intltool
 BuildRequires:	appstream-util
