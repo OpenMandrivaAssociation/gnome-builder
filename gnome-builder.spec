@@ -132,7 +132,7 @@ developing applications that use %{name}.
 %{_libexecdir}/gnome-builder-flatpak
 
 %files devel
-%{_libdir}/pkgconfig/gnome-builder-42.0.pc
+%{_libdir}/pkgconfig/gnome-builder-%{version}.pc
 %{_datadir}/%{name}/gir-1.0/
 #{_datadir}/%{name}/vapi/
 %{_includedir}/gnome-builder*/
