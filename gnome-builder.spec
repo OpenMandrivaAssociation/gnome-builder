@@ -16,7 +16,7 @@
 %global jsonrpc_glib_version 3.26.1
 
 Name:		gnome-builder
-Version:	42.0
+Version:	42.1
 Release:	1
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
@@ -24,6 +24,7 @@ Group:		Graphical desktop/GNOME
 URL:		https://wiki.gnome.org/Apps/Builder
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 Patch0:		work-around-wshadow-error.patch
+Patch1:   gnome-builder-42.1-openmandriva-workaround-for-typelibs.patch
 
 BuildRequires:	bison
 BuildRequires:	intltool
@@ -116,13 +117,15 @@ developing applications that use %{name}.
 %{_libdir}/%{name}/
 %{_libexecdir}/gnome-builder-clang
 %{_datadir}/applications/org.gnome.Builder.desktop
+%{_datadir}/gnome-builder/fonts/
 %{_datadir}/glib-2.0/schemas/*.xml
+%{_datadir}/gnome-builder/icons/hicolor/
 %{_iconsdir}/*/*/*/*
 %{_datadir}/dbus-1/services/org.gnome.Builder.service
 %{_datadir}/gtksourceview-4/*
 #{_datadir}/gtksourceview-3.0/styles/builder-dark.style-scheme.xml
 #{_datadir}/gtksourceview-3.0/styles/builder.style-scheme.xml
-%{_datadir}/gnome-builder
+#{_datadir}/gnome-builder
 %{_datadir}/metainfo/org.gnome.Builder.appdata.xml
 %{python_sitelib}/gi/overrides/Ide.py
 %{_libexecdir}/gnome-builder-git
@@ -130,7 +133,7 @@ developing applications that use %{name}.
 %{_libexecdir}/gnome-builder-flatpak
 
 %files devel
-%{_libdir}/pkgconfig/gnome-builder-42.0.pc
+%{_libdir}/pkgconfig/gnome-builder-%{version}.pc
 %{_datadir}/%{name}/gir-1.0/
 #{_datadir}/%{name}/vapi/
 %{_includedir}/gnome-builder*/
