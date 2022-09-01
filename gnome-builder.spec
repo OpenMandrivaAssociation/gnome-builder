@@ -17,7 +17,7 @@
 
 Name:		gnome-builder
 Version:	42.1
-Release:	1
+Release:	2
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
