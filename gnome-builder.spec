@@ -37,6 +37,7 @@ BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:	llvm-devel
 BuildRequires:	meson
+BuildRequires:  pkgconfig(dspy-1)
 BuildRequires:	pkgconfig(enchant-2)
 BuildRequires:	pkgconfig(flatpak)
 BuildRequires:	pkgconfig(gjs-1.0) >= 1.42.0
