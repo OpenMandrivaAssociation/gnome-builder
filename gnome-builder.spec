@@ -57,7 +57,7 @@ BuildRequires:  pkgconfig(libhandy-1)
 BuildRequires:	pkgconfig(mm-common-util)
 BuildRequires:	pkgconfig(pygobject-3.0) >= 3.0.0
 BuildRequires:	pkgconfig(python)
-BuildRequires:	pkgconfig(sysprof-ui-4) >= 3.29.3
+BuildRequires:	pkgconfig(sysprof-4) >= 3.29.3
 BuildRequires:	pkgconfig(systemd)
 BuildRequires:  pkgconfig(template-glib-1.0)
 BuildRequires:	pkgconfig(vapigen)
