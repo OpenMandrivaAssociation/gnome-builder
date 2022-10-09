@@ -42,8 +42,8 @@ BuildRequires:	pkgconfig(flatpak)
 BuildRequires:	pkgconfig(gjs-1.0) >= 1.42.0
 BuildRequires:	pkgconfig(gobject-introspection-1.0) >= 1.35.9
 BuildRequires:	pkgconfig(gspell-1)
-BuildRequires:	pkgconfig(gtk+-3.0) >= 3.9.6
-BuildRequires:	pkgconfig(gtksourceview-4)
+BuildRequires:	pkgconfig(gtk4) 
+BuildRequires:	pkgconfig(gtksourceview-5)
 BuildRequires:	pkgconfig(json-glib-1.0)
 BuildRequires:  pkgconfig(jsonrpc-glib-1.0) >= %{jsonrpc_glib_version}
 BuildRequires:  pkgconfig(libcmark)
