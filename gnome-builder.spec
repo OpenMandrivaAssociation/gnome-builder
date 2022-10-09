@@ -63,6 +63,7 @@ BuildRequires:	pkgconfig(systemd)
 BuildRequires:  pkgconfig(template-glib-1.0)
 BuildRequires:	pkgconfig(vapigen)
 BuildRequires:	pkgconfig(vte-2.91)
+BuildRequires:  pkgconfig(vte-2.91-gtk4)
 BuildRequires:	python-gobject3
 BuildRequires:	vala-tools
 BuildRequires:  vala
