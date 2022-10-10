@@ -127,10 +127,7 @@ developing applications that use %{name}.
 %{_datadir}/gnome-builder/icons/hicolor/
 %{_iconsdir}/*/*/*/*
 %{_datadir}/dbus-1/services/org.gnome.Builder.service
-#{_datadir}/gtksourceview-4/*
-#{_datadir}/gtksourceview-3.0/styles/builder-dark.style-scheme.xml
-#{_datadir}/gtksourceview-3.0/styles/builder.style-scheme.xml
-#{_datadir}/gnome-builder
+%{_datadir}/gnome-builder/styles/
 %{_datadir}/metainfo/org.gnome.Builder.appdata.xml
 %{python_sitelib}/gi/overrides/Ide.py
 %{_libexecdir}/gnome-builder-git
