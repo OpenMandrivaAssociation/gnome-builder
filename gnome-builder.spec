@@ -24,7 +24,7 @@ Group:		Graphical desktop/GNOME
 URL:		https://wiki.gnome.org/Apps/Builder
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 Patch0:		work-around-wshadow-error.patch
-#Patch1:   gnome-builder-42.1-openmandriva-workaround-for-typelibs.patch
+Patch1:   gnome-builder-42.1-openmandriva-workaround-for-typelibs.patch
 
 BuildRequires:	bison
 BuildRequires:	intltool
