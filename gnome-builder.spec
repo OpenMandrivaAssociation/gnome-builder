@@ -38,6 +38,7 @@ BuildRequires:	libxml2-utils
 BuildRequires:	llvm-devel
 BuildRequires:	meson
 BuildRequires:  pkgconfig(dspy-1)
+BuildRequires:  pkgconfig(editorconfig)
 BuildRequires:	pkgconfig(enchant-2)
 BuildRequires:	pkgconfig(flatpak)
 BuildRequires:	pkgconfig(gjs-1.0) >= 1.42.0
@@ -73,7 +74,7 @@ BuildRequires:	xsltproc
 BuildRequires:  pkgconfig(gladeui-2.0)
 BuildConflicts: valgrind-devel <= 3.13.0-10.mga7
 
-Requires:	gtksourceview >= 4
+Requires:	gtksourceview5
 Requires:	gsettings-desktop-schemas
 # Not imported yet for Cooker (penguin)
 #Requires:	pythonegg(3)(jedi)
