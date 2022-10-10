@@ -1,6 +1,6 @@
-diff -uraN gnome-builder-42.1/src/plugins/meson-templates/resources/src/main-gtk4.py omv-gnome-builder-42.1/src/plugins/meson-templates/resources/src/main-gtk4.py
---- gnome-builder-42.1/src/plugins/meson-templates/resources/src/main-gtk4.py	2022-04-21 00:28:42.000000000 +0200
-+++ omv-gnome-builder-42.1/src/plugins/meson-templates/resources/src/main-gtk4.py	2022-08-12 17:50:48.073831677 +0200
+diff -uraN gnome-builder-43.2/src/plugins/meson-templates/resources/src/main-gtk4.py omv-gnome-builder-43.2/src/plugins/meson-templates/resources/src/main-gtk4.py
+--- gnome-builder-43.2/src/plugins/meson-templates/resources/src/main-gtk4.py	2022-10-05 02:10:26.000000000 +0200
++++ omv-gnome-builder-43.2/src/plugins/meson-templates/resources/src/main-gtk4.py	2022-10-10 20:46:15.113774535 +0200
 @@ -4,11 +4,9 @@
  import gi
  
@@ -12,5 +12,5 @@ diff -uraN gnome-builder-42.1/src/plugins/meson-templates/resources/src/main-gtk
 -from gi.repository import Gtk, Gio{{if is_adwaita}}, Adw{{end}}
 +from gi.repository import Gtk, Gio, Adw
  
- from .window import {{PreFix}}Window, AboutDialog
+ from .window import {{PreFix}}Window
  

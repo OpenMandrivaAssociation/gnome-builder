@@ -16,8 +16,8 @@
 %global jsonrpc_glib_version 3.26.1
 
 Name:		gnome-builder
-Version:	42.1
-Release:	2
+Version:	43.2
+Release:	1
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -37,13 +37,15 @@ BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:	llvm-devel
 BuildRequires:	meson
+BuildRequires:  pkgconfig(dspy-1)
+BuildRequires:  pkgconfig(editorconfig)
 BuildRequires:	pkgconfig(enchant-2)
 BuildRequires:	pkgconfig(flatpak)
 BuildRequires:	pkgconfig(gjs-1.0) >= 1.42.0
 BuildRequires:	pkgconfig(gobject-introspection-1.0) >= 1.35.9
 BuildRequires:	pkgconfig(gspell-1)
-BuildRequires:	pkgconfig(gtk+-3.0) >= 3.9.6
-BuildRequires:	pkgconfig(gtksourceview-4)
+BuildRequires:	pkgconfig(gtk4) 
+BuildRequires:	pkgconfig(gtksourceview-5)
 BuildRequires:	pkgconfig(json-glib-1.0)
 BuildRequires:  pkgconfig(jsonrpc-glib-1.0) >= %{jsonrpc_glib_version}
 BuildRequires:  pkgconfig(libcmark)
@@ -53,15 +55,18 @@ BuildRequires:	pkgconfig(libgit2-glib-1.0)
 BuildRequires:  pkgconfig(libpeas-1.0) >= %{libpeas_version}
 BuildRequires:  pkgconfig(libpcre2-8)
 BuildRequires:  pkgconfig(libportal)
+BuildRequires:  pkgconfig(libpanel-1)
 BuildRequires:  pkgconfig(libhandy-1)
 BuildRequires:	pkgconfig(mm-common-util)
 BuildRequires:	pkgconfig(pygobject-3.0) >= 3.0.0
 BuildRequires:	pkgconfig(python)
-BuildRequires:	pkgconfig(sysprof-ui-4) >= 3.29.3
+BuildRequires:	pkgconfig(sysprof-4) >= 3.29.3
 BuildRequires:	pkgconfig(systemd)
 BuildRequires:  pkgconfig(template-glib-1.0)
 BuildRequires:	pkgconfig(vapigen)
 BuildRequires:	pkgconfig(vte-2.91)
+BuildRequires:  pkgconfig(vte-2.91-gtk4)
+BuildRequires:  pkgconfig(webkit2gtk-5.0)
 BuildRequires:	python-gobject3
 BuildRequires:	vala-tools
 BuildRequires:  vala
@@ -69,7 +74,7 @@ BuildRequires:	xsltproc
 BuildRequires:  pkgconfig(gladeui-2.0)
 BuildConflicts: valgrind-devel <= 3.13.0-10.mga7
 
-Requires:	gtksourceview >= 4
+Requires:	gtksourceview5
 Requires:	gsettings-desktop-schemas
 # Not imported yet for Cooker (penguin)
 #Requires:	pythonegg(3)(jedi)
@@ -122,10 +127,7 @@ developing applications that use %{name}.
 %{_datadir}/gnome-builder/icons/hicolor/
 %{_iconsdir}/*/*/*/*
 %{_datadir}/dbus-1/services/org.gnome.Builder.service
-%{_datadir}/gtksourceview-4/*
-#{_datadir}/gtksourceview-3.0/styles/builder-dark.style-scheme.xml
-#{_datadir}/gtksourceview-3.0/styles/builder.style-scheme.xml
-#{_datadir}/gnome-builder
+%{_datadir}/gnome-builder/styles/
 %{_datadir}/metainfo/org.gnome.Builder.appdata.xml
 %{python_sitelib}/gi/overrides/Ide.py
 %{_libexecdir}/gnome-builder-git
