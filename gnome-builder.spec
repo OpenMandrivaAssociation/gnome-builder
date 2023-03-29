@@ -50,6 +50,7 @@ BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(gtksourceview-5)
 BuildRequires:	pkgconfig(json-glib-1.0)
 BuildRequires:  pkgconfig(jsonrpc-glib-1.0) >= %{jsonrpc_glib_version}
+BuildRequires:  pkgconfig(libdex-1)
 BuildRequires:  pkgconfig(libcmark)
 BuildRequires:  pkgconfig(libdazzle-1.0)
 BuildRequires:	pkgconfig(libdevhelp-3.0)
