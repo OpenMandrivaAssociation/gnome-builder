@@ -16,8 +16,8 @@
 %global jsonrpc_glib_version 3.26.1
 
 Name:		gnome-builder
-Version:	43.6
-Release:	3
+Version:	44.1
+Release:	1
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -50,6 +50,7 @@ BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(gtksourceview-5)
 BuildRequires:	pkgconfig(json-glib-1.0)
 BuildRequires:  pkgconfig(jsonrpc-glib-1.0) >= %{jsonrpc_glib_version}
+BuildRequires:  pkgconfig(libdex-1)
 BuildRequires:  pkgconfig(libcmark)
 BuildRequires:  pkgconfig(libdazzle-1.0)
 BuildRequires:	pkgconfig(libdevhelp-3.0)
@@ -68,7 +69,7 @@ BuildRequires:  pkgconfig(template-glib-1.0)
 BuildRequires:	pkgconfig(vapigen)
 BuildRequires:	pkgconfig(vte-2.91)
 BuildRequires:  pkgconfig(vte-2.91-gtk4)
-BuildRequires:  pkgconfig(webkit2gtk-5.0)
+BuildRequires:  pkgconfig(webkitgtk-6.0)
 BuildRequires:	python-gobject3
 BuildRequires:	vala-tools
 BuildRequires:  vala
