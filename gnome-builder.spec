@@ -133,6 +133,7 @@ developing applications that use %{name}.
 %{_datadir}/gnome-builder/styles/
 %{_datadir}/metainfo/org.gnome.Builder.appdata.xml
 %{python_sitelib}/gi/overrides/Ide.py
+%{python_sitelib}/gi/overrides/__pycache__/Ide.cpython-*.pyc
 %{_libexecdir}/gnome-builder-git
 #{_libexecdir}/gnome-builder-vala
 %{_libexecdir}/gnome-builder-flatpak
