@@ -27,6 +27,8 @@ Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version
 # OpenMandriva patches:
 Patch0:		work-around-wshadow-error.patch
 Patch1:   gnome-builder-42.1-openmandriva-workaround-for-typelibs.patch
+# https://gitlab.gnome.org/GNOME/gnome-builder/-/issues/2194
+Patch2:    gdkrgba.patch
 
 BuildRequires:	bison
 BuildRequires:	intltool
