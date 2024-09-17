@@ -65,6 +65,7 @@ BuildRequires:  pkgconfig(libpcre2-8)
 BuildRequires:  pkgconfig(libportal)
 BuildRequires:  pkgconfig(libpanel-1)
 BuildRequires:  pkgconfig(libhandy-1)
+BuildRequires:  pkgconfig(libspelling-1)
 BuildRequires:	pkgconfig(mm-common-util)
 BuildRequires:	pkgconfig(pygobject-3.0) >= 3.0.0
 BuildRequires:	pkgconfig(python)
