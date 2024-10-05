@@ -130,6 +130,7 @@ export CXX=g++
 %{_bindir}/*
 %{_libdir}/%{name}/
 %{_libexecdir}/gnome-builder-clang
+%{_libexecdir}/gnome-builder-git
 %{_datadir}/applications/org.gnome.Builder.desktop
 %{_datadir}/gnome-builder/fonts/
 %{_datadir}/glib-2.0/schemas/*.xml
