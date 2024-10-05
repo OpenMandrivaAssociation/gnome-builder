@@ -13,6 +13,7 @@
 %global privlibs .*-private|libide|libgnome-builder-plugins
 %global __requires_exclude ^(%{privlibs}).*\\.so.*
 %global __provides_exclude_from %{_libdir}/gnome-builder/plugins/.*\\.so
+%global __requires_exclude typelib(.*Adw.*|.*Gio.*if.*|.*is_adwaita.*)
 
 %global libpeas_version 1.22.0
 %global jsonrpc_glib_version 3.26.1
