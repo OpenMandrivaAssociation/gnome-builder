@@ -138,9 +138,7 @@ export CXX=g++
 %{_datadir}/dbus-1/services/org.gnome.Builder.service
 %{_datadir}/gnome-builder/styles/
 %{_datadir}/metainfo/org.gnome.Builder.appdata.xml
-#{python_sitelib}/gi/overrides/Ide.py
-#{python_sitelib}/gi/overrides/__pycache__/Ide.cpython-*.pyc
-%{_libexecdir}/gnome-builder-git
+%{_datadir}/gnome-builder/clang-format/.clang-format
 #{_libexecdir}/gnome-builder-vala
 %{_libexecdir}/gnome-builder-flatpak
 
