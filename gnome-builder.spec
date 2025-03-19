@@ -138,7 +138,7 @@ export CXX=g++
 %{_datadir}/gnome-builder/icons/hicolor/
 %{_iconsdir}/*/*/*/*
 %{_datadir}/dbus-1/services/org.gnome.Builder.service
-%{_datadir}/gnome-builder/styles/
+#{_datadir}/gnome-builder/styles/
 %{_datadir}/metainfo/org.gnome.Builder.appdata.xml
 %{_datadir}/gnome-builder/clang-format/.clang-format
 #{_libexecdir}/gnome-builder-vala
