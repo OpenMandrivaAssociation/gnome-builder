@@ -44,6 +44,7 @@ BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:	llvm-devel
 BuildRequires:	meson
+BuildRequires:  desktop-file-utils
 #BuildRequires:  pkgconfig(dspy-1)
 BuildRequires:  pkgconfig(editorconfig)
 BuildRequires:	pkgconfig(enchant-2)
