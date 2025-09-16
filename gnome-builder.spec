@@ -19,8 +19,8 @@
 %global jsonrpc_glib_version 3.26.1
 
 Name:		gnome-builder
-Version:	48.2
-Release:	2
+Version:	49.0
+Release:	1
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -140,7 +140,7 @@ export CXX=g++
 %{_iconsdir}/*/*/*/*
 %{_datadir}/dbus-1/services/org.gnome.Builder.service
 #{_datadir}/gnome-builder/styles/
-%{_datadir}/metainfo/org.gnome.Builder.appdata.xml
+%{_datadir}/metainfo/org.gnome.Builder.metainfo.xml
 %{_datadir}/gnome-builder/clang-format/.clang-format
 #{_libexecdir}/gnome-builder-vala
 %{_libexecdir}/gnome-builder-flatpak
