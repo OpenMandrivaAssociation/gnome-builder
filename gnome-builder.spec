@@ -83,7 +83,7 @@ BuildRequires:	vala-tools
 BuildRequires:  vala
 BuildRequires:	xsltproc
 BuildRequires:  pkgconfig(gladeui-2.0)
-BuildConflicts: valgrind-devel <= 3.13.0-10.mga7
+BuildRequires:  pkgconfig(yaml-0.1)
 
 Requires:	gtksourceview5
 Requires:	gsettings-desktop-schemas
