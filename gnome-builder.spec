@@ -37,6 +37,7 @@ BuildRequires:	bison
 BuildRequires:	intltool
 BuildRequires:	appstream-util
 BuildRequires:	clang-devel
+BuildRequires:  atomic-devel
 BuildRequires:	docbook-style-xsl
 BuildRequires:	flex
 BuildRequires:	gsettings-desktop-schemas
