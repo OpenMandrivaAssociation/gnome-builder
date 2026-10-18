@@ -20,7 +20,7 @@
 
 Name:		gnome-builder
 Version:	50.0
-Release:	4
+Release:	5
 Summary:	IDE for writing GNOME-based software
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
